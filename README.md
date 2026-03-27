@@ -2,8 +2,6 @@
 
 Website manajemen fasilitas apartemen Bale Hinggil berbasis Laravel 12. Mendukung layanan CO (Cleaning Order), DI (Dekorasi Interior), WO (Work Order/Maintenance), manajemen tipe unit, dashboard admin lengkap dengan analitik pengunjung/booking/aktivitas, form kontak, tracking klik CTA/booking, homepage dinamis, dan proteksi akses admin rahasia (gerbang burung). Di bawah ini instruksi run untuk Laragon (direkomendasikan).
 
-<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\" alt=\"Laravel Logo\"></a></p>
-
 ## Lingkungan (.env)
 
 - Copy `.env.example` ke `.env` jika ada, atau buat manual dari `.env`.
@@ -69,7 +67,7 @@ Website manajemen fasilitas apartemen Bale Hinggil berbasis Laravel 12. Mendukun
 | Homepage   | `/admin/home`       | AdminHomepageController  | Homepage       |
 | Pesan      | `/admin/messages`   | MessageController        | ContactMessage |
 | Aktivitas  | `/admin/activities` | ActivityController       | Activity       |
-| Settings   | `/admin/settings`   | SettingController        | Setting        |
+| Settings   | `/admin/settings`   | SettingController        | Setting        
 
 ## Perintah Umum
 
