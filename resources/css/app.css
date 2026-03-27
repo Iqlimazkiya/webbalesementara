@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-delay-200{ animation-delay:0.4s; }
+.animation-delay-400{ animation-delay:0.8s; }
+.animation-delay-600{ animation-delay:1.2s; }
+.animation-delay-800{ animation-delay:1.6s; }
+.animate-fadeUp{will-change: transform, opacity;}
+
+.fade-up-scroll{
+opacity:0;
+transform:translateY(60px);
+transition:all 1s ease;
+}
+
+.fade-up-scroll.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.fade-left-scroll{
+opacity:0;
+transform:translateX(-60px);
+transition:all 1s ease;
+}
+
+.fade-left-scroll.show{
+opacity:1;
+transform:translateX(0);
+}
+
+.fade-right-scroll{
+opacity:0;
+transform:translateX(60px);
+transition:all 1s ease;
+}
+
+.fade-right-scroll.show{
+opacity:1;
+transform:translateX(0);
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

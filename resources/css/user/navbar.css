@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+.nav-link {
+    position: relative;
+    padding: 4px 0;
+    color: white;
+    transition: color 0.3s ease;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #22c55e;
+    transition: width 0.3s ease;
+}
+.nav-link:hover {
+    color: #22c55e;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+.nav-link.active {
+    color: #22c55e !important;
+}
+.menu-open .hamburger-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-open .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+.menu-open .hamburger-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.nav-active-bg {
+    background-color: white !important;
+    backdrop-filter: none !important;
+    border-color: #eee !important;
+}

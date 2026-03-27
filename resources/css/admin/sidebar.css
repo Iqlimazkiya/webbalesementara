@@ -1,0 +1,97 @@
+#sb-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#sb-close {
+    display: none !important;
+}
+
+@media (max-width: 1199.98px) {
+    #sb-close {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sidebar {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: min(280px, 80vw) !important;
+        height: 100dvh !important;
+        z-index: 1001 !important;
+        transform: translateX(-100%) !important;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        margin-left: 0 !important;
+        box-shadow: none !important;
+    }
+
+    #sidebar.sb-open {
+        transform: translateX(0%) !important;
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    #sidebar .sidebar-wrapper {
+        width: 100% !important;
+        height: 100dvh !important;
+        overflow-y: auto !important;
+    }
+
+    #main {
+        margin-left: 0 !important;
+    }
+}
+
+.sidebar-wrapper .menu .sidebar-link span,
+.sidebar-wrapper .menu .sidebar-link i {
+    color: white !important;
+}
+
+.sidebar-wrapper .menu .sidebar-link.custom-tight {
+    padding: 0.5rem 0.8rem !important;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sidebar-wrapper .menu .sidebar-item:not(.active) .sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 7px;
+}
+
+.sidebar-wrapper .menu .sidebar-item.active .sidebar-link {
+    background: #4c7c5b !important;
+    border-radius: 7px;
+}
+
+.sidebar-title.custom-title {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 0.65rem !important;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 15px 0 5px 10px !important;
+    padding: 0 !important;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem !important;
+}
+.sidebar-wrapper .menu {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+#layananSubmenu .sidebar-link {
+    color: white !important;
+    border-radius: 5px;
+}
+#layananSubmenu .sidebar-link:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+}

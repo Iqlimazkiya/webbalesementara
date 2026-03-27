@@ -1,0 +1,253 @@
+:root {
+    --bs-primary: #335a40;
+    --bs-primary-rgb: 51, 90, 64;
+    --bs-primary-dark: #264330;
+    --bs-link-color: #335a40;
+    --bs-link-hover-color: #264330;
+}
+
+.btn-primary {
+    background-color: #335a40;
+    border-color: #335a40;
+}
+
+.btn-primary:hover {
+    background-color: #264330;
+    border-color: #264330;
+}
+
+.btn-outline-primary {
+    color: #335a40;
+    border-color: #335a40;
+}
+
+.btn-outline-primary:hover {
+    background-color: #335a40;
+    border-color: #335a40;
+    color: white;
+}
+
+.text-primary {
+    color: #335a40;
+}
+
+.bg-primary {
+    background-color: #335a40;
+}
+
+.border-primary {
+    border-color: #335a40;
+}
+
+.sidebar-wrapper {
+    background: linear-gradient(180deg, #335a40 0%, #1e3326 100%);
+}
+
+.sidebar-menu li a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-left: 4px solid white;
+}
+
+.page-heading h3 {
+    color: #335a40;
+}
+
+.card-header {
+    border-bottom-color: #335a40;
+}
+
+.badge.bg-light-primary {
+    background-color: rgba(51, 90, 64, 0.1);
+    color: #335a40;
+}
+
+.progress-bar {
+    background-color: #335a40;
+}
+
+.nav-tabs .nav-link.active {
+    color: #335a40;
+    border-bottom-color: #335a40;
+}
+
+a {
+    color: #335a40;
+}
+
+a:hover {
+    color: #264330;
+}
+
+.dropdown-item:active {
+    background-color: #335a40;
+}
+
+.form-check-input:checked {
+    background-color: #335a40;
+    border-color: #335a40;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #335a40;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #264330;
+}
+
+.statistic-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.statistic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(51, 90, 64, 0.15);
+}
+
+.timeline-item {
+    border-left: 2px solid #335a40;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #335a40;
+}
+
+@keyframes toastIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes toastOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    #main {
+        padding: 1rem;
+    }
+    .page-heading {
+        margin-bottom: 1rem;
+    }
+    .page-heading h3 {
+        font-size: 1.1rem;
+    }
+    .card-body {
+        padding: 14px;
+    }
+    .card-header {
+        padding: 12px 14px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .table td,
+    .table th {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .admin-card-section {
+        padding: 16px;
+        border-radius: 10px;
+    }
+    .section-title-text {
+        font-size: 13px;
+    }
+    .preview-img-large {
+        height: 100px;
+    }
+    .page-heading .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .page-heading .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .unit-thumb-admin {
+        width: 64px;
+        height: 44px;
+    }
+    .text-truncate {
+        max-width: 110px;
+    }
+    .table-borderless td {
+        display: block;
+        width: 100%;
+        padding: 3px 0;
+        border: none;
+    }
+    .table-borderless td:first-child {
+        font-size: 11px;
+        color: #6b7280;
+        padding-top: 10px;
+    }
+    .mt-4.d-flex.gap-2 {
+        flex-wrap: wrap;
+    }
+    .mt-4.d-flex.gap-2 .btn {
+        flex: 1;
+        min-width: 130px;
+    }
+    .timeline-item {
+        padding-left: 14px;
+    }
+    .badge {
+        font-size: 10px;
+    }
+    .preview-box-admin {
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    #main {
+        padding: 1.5rem;
+    }
+    .admin-card-section {
+        padding: 18px;
+    }
+    .table td,
+    .table th {
+        font-size: 13px;
+    }
+}
